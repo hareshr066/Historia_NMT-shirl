@@ -1,0 +1,16 @@
+{
+    "model_name": "models/opus-mt-mul-en",
+    "test_size": 9,
+    "baseline": {
+        "bleu": 2.94,
+        "rougeL": 17.21,
+        "meteor": 0.0,
+        "bertscore": 0.0
+    },
+    "finetuned": {
+        "bleu": 1.74,
+        "rougeL": 13.71,
+        "meteor": 0.0,
+        "bertscore": 0.0
+    }
+}

@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Node dependencies
+node_modules/
+**/node_modules/
+
+# Next.js build output
+.next/
+**/.next/
+
+# IDEs and Editors
+.vscode/
+.idea/
+
+# Large pre-trained model weights
+models/opus-mt-mul-en/
+
+# Intermediate checkpoints
+models/checkpoint/checkpoint-*/
+
+# Database and logs
+*.log
+temp_uploads/
+*.db-journal
+test_chunk.bin
