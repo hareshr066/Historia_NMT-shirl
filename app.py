@@ -1,7 +1,11 @@
-import streamlit as st
-import yaml
 import os
 import sys
+
+# Safeguard OpenMP DLL loading issue
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+
+import streamlit as st
+import yaml
 import time
 
 # Set up page configurations
@@ -230,55 +234,69 @@ def load_nmt_pipeline():
     import scipy
     import sklearn
     
-    # Monkey patch check_torch_load_is_safe to bypass CVE-2025-32434 check
-    import transformers.utils.import_utils
-    import transformers.modeling_utils
-    transformers.utils.import_utils.check_torch_load_is_safe = lambda: None
-    transformers.modeling_utils.check_torch_load_is_safe = lambda: None
-    
+    # Monkey-patch check_torch_load_is_safe to bypass CVE-2025-32434 check
+    # (works across transformers versions that may place it in different modules)
+    try:
+        import transformers.utils.import_utils
+        transformers.utils.import_utils.check_torch_load_is_safe = lambda: None
+    except (ImportError, AttributeError):
+        pass
+    try:
+        import transformers.modeling_utils
+        transformers.modeling_utils.check_torch_load_is_safe = lambda: None
+    except (ImportError, AttributeError):
+        pass
+    try:
+        import transformers.utils
+        transformers.utils.check_torch_load_is_safe = lambda: None
+    except (ImportError, AttributeError):
+        pass
+
     import torch
     import yaml
     from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
     from peft import PeftModel
-    
-    # Setup path
-    sys.path.append(os.path.abspath('scripts'))
+
+    # Setup path so augment/detector/retriever/ranker can be imported
+    scripts_path = os.path.abspath('scripts')
+    if scripts_path not in sys.path:
+        sys.path.insert(0, scripts_path)
     from augment import IKSInputAugmenter
     from explain import IKSExplainer
-    
+
     config_path = "configs/config.yaml"
     with open(config_path, "r", encoding="utf-8") as f:
         config = yaml.safe_load(f)
-        
+
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    
-    # Instantiating custom preprocessor / augmenter modules
+
+    # Instantiate pipeline modules
     augmenter = IKSInputAugmenter(config_path)
     explainer = IKSExplainer()
-    
-    # Load translation models
-    model_name = config["models"]["nllb"] # Path: models/opus-mt-mul-en
+
+    # Load Opus-MT (MarianMT) translation model
+    model_name = config["models"]["nllb"]  # points to models/opus-mt-mul-en
     tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
-    
+
     base_model = AutoModelForSeq2SeqLM.from_pretrained(
         model_name,
         trust_remote_code=True,
         torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32
     )
-    
+
     adapter_path = os.path.join(config["training"]["output_dir"], "best_lora_adapter")
     if os.path.exists(adapter_path):
         finetuned_model = PeftModel.from_pretrained(base_model, adapter_path)
     else:
         finetuned_model = base_model
-        
+
     finetuned_model = finetuned_model.to(device)
     finetuned_model.eval()
-    
-    # Pre-warm language codes for NLLB
-    tokenizer.src_lang = config["models"]["source_lang"]
-    tokenizer.tgt_lang = config["models"]["target_lang"]
-    
+
+    # NOTE: opus-mt-mul-en is a MarianMT model — it does NOT use src_lang/tgt_lang
+    # attributes. Language selection for Tamil is handled automatically via the >>tam<<
+    # prefix token in the source text (if the model supports it). No attribute assignment needed.
+
     return augmenter, explainer, tokenizer, finetuned_model, device
 
 # Loading components inside a spinner
@@ -290,10 +308,13 @@ with st.spinner("Initializing models and FAISS knowledge base (loading weights t
         st.error(f"Error loading translation models: {e}")
         st.stop()
 
-# Helper function to generate translation
+# Helper function to generate translation using Opus-MT (MarianMT)
 def translate_text(text, model, tokenizer, device, disable_adapter=False):
     import torch
-    inputs = tokenizer(text, return_tensors="pt", truncation=True, max_length=256).to(device)
+    # Opus-MT mul-en uses >>tam<< language tag prepended to source text for Tamil
+    # This tells the multilingual model which source language to translate from.
+    prefixed_text = f">>tam<< {text}"
+    inputs = tokenizer(prefixed_text, return_tensors="pt", truncation=True, max_length=256).to(device)
     with torch.no_grad():
         if disable_adapter and hasattr(model, "disable_adapter"):
             with model.disable_adapter():

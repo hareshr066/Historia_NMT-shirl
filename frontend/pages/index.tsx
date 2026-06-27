@@ -518,10 +518,7 @@ export default function Home() {
         {/* ============================================================== */}
         {activeTab === 'dashboard' && (
           <div className="view-panel animate-fade-in">
-            <div className="welcome-banner">
-              <h2>Good Evening, Harish 👋</h2>
-              <p>Welcome to ChronoIKS AI — Explainable Semantic Intelligence Platform for Indian Knowledge Systems</p>
-            </div>
+
 
             <div className="global-search-card shadow">
               <div className="search-label">Search Indian Knowledge Base (FAISS Semantic Index)</div>
