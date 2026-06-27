@@ -73,6 +73,9 @@ class IKSMeaningRetriever:
     def load_index(self):
         """
         Loads the FAISS index if it exists, or builds a new one.
+        When a saved FAISS index is found, we skip re-encoding all documents
+        (those embeddings are already stored in the index file) and only
+        initialize the model for query-time encoding.
         """
         self._initialize_model()
         
@@ -80,17 +83,20 @@ class IKSMeaningRetriever:
             import faiss
             if os.path.exists(self.index_path):
                 self.index = faiss.read_index(self.index_path)
-                # Re-generate embeddings for numpy fallback checks if needed
-                self.doc_texts = [f"{entry['tamil']} {entry['concept']} {entry['definition']} {entry['historical_meaning']}" for entry in self.kb]
-                self.embeddings = self.model.encode(self.doc_texts, show_progress_bar=False, convert_to_numpy=True)
-                self.embeddings = self.embeddings / np.linalg.norm(self.embeddings, axis=1, keepdims=True)
+                # Build doc_texts for reference (no re-encoding needed when using FAISS)
+                self.doc_texts = [
+                    f"{entry['tamil']} {entry['concept']} {entry['definition']} {entry['historical_meaning']}"
+                    for entry in self.kb
+                ]
+                # Only build numpy embeddings as a fallback if FAISS index failed to load
+                self.embeddings = None
                 self.index_built = True
                 print("FAISS index loaded successfully.")
                 return
         except ImportError:
             pass
             
-        # If loading fails or FAISS not installed, build it
+        # If loading fails or FAISS not installed, build it (includes encoding)
         self.build_index()
 
     def retrieve_candidates(self, query_text, top_k=5):

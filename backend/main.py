@@ -1,3 +1,9 @@
+import os
+import sys
+
+# Safeguard OpenMP DLL loading issue
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+
 import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
