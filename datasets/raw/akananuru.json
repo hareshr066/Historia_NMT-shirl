@@ -1,0 +1,226 @@
+[
+  {
+    "id": "AKA-0001",
+    "tamil_text": "தொல்காப்பியர் மொழிந்த திணைகளின் வழி நின்று ஐந்திணை இலக்கியம் வளர்ந்தது.",
+    "english_translation": "Following the five-landscape (Tinai) classification that Tolkappiyar established, the five-landscape literature flourished.",
+    "author": "Maruthan Ilanagan",
+    "work_name": "Akananuru",
+    "chapter": "Verse 1",
+    "verse_number": "1",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Love/Akam",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "A.K. Ramanujan",
+    "translator_notes": "Landscape theory of classical poetry.",
+    "commentary": "Refers to the organizing principle of the five tinais.",
+    "iks_concepts": [
+      "Thinai"
+    ],
+    "glossary": {
+      "திணைகளின்": "of the landscapes",
+      "ஐந்திணை": "five tinais"
+    },
+    "metadata": {}
+  },
+  {
+    "id": "AKA-0125",
+    "tamil_text": "முல்லை நில மான் கணம் மழை வரும் என்று ஓட்டம் பிடித்தன.",
+    "english_translation": "The deer herds of the Mullai pastoral land ran away sensing the approaching rains.",
+    "author": "Various Sangam Poets",
+    "work_name": "Akananuru",
+    "chapter": "Verse 125",
+    "verse_number": "125",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Love/Akam",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "George L. Hart",
+    "translator_notes": "The deer's flight at the scent of rain is an omen for the hero's impending return.",
+    "commentary": "",
+    "iks_concepts": [
+      "Mullai",
+      "Pirivu"
+    ],
+    "glossary": {},
+    "metadata": {}
+  },
+  {
+    "id": "AKA-0073",
+    "tamil_text": "நெய்தல் ஓதத்து நீர்வழி நிற்கும் தோழி நிலையம் அமர்ந்திட்டாள்.",
+    "english_translation": "The confidante stood steadfast by the tidal coastal waterway.",
+    "author": "Various Sangam Poets",
+    "work_name": "Akananuru",
+    "chapter": "Verse 73",
+    "verse_number": "73",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Love/Akam",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "George L. Hart",
+    "translator_notes": "The confidante's steady presence in the coastal landscape supports the grieving heroine.",
+    "commentary": "",
+    "iks_concepts": [
+      "Neythal",
+      "Thozhi"
+    ],
+    "glossary": {},
+    "metadata": {}
+  },
+  {
+    "id": "AKA-0149",
+    "tamil_text": "கார்காலம் வந்தது கலிங்கத்துப் பறவைகள் கூவும் காலை.",
+    "english_translation": "The rainy season has come; in the morning the birds of Kalinga cry.",
+    "author": "Various Sangam Poets",
+    "work_name": "Akananuru",
+    "chapter": "Verse 149",
+    "verse_number": "149",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Love/Akam",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "George L. Hart",
+    "translator_notes": "The arrival of the monsoon in the Mullai landscape signals the season for the hero to return.",
+    "commentary": "",
+    "iks_concepts": [
+      "Mullai",
+      "Pirivu"
+    ],
+    "glossary": {},
+    "metadata": {}
+  },
+  {
+    "id": "AKA-0010",
+    "tamil_text": "பாலை நடந்தவன் பண்பு மறவாது நினைக்கும் தலைவி.",
+    "english_translation": "The heroine never forgets the character of the one who journeyed through the arid Palai lands.",
+    "author": "Various Sangam Poets",
+    "work_name": "Akananuru",
+    "chapter": "Verse 10",
+    "verse_number": "10",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Love/Akam",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "George L. Hart",
+    "translator_notes": "The heroine's memory of her lover's noble character sustains her through separation in Palai.",
+    "commentary": "",
+    "iks_concepts": [
+      "Palai",
+      "Panpu",
+      "Pirivu"
+    ],
+    "glossary": {},
+    "metadata": {}
+  },
+  {
+    "id": "AKA-0168",
+    "tamil_text": "மருதம் நிலத்தில் மனைவி மனம் கொதித்து ஊடல் கொண்டாள்.",
+    "english_translation": "In the fertile Marutham land, the wife seethed inwardly and took up a lover's tiff.",
+    "author": "Various Sangam Poets",
+    "work_name": "Akananuru",
+    "chapter": "Verse 168",
+    "verse_number": "168",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Love/Akam",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "George L. Hart",
+    "translator_notes": "The Marutham landscape scenario of marital infidelity and the wife's righteous jealousy (Udal).",
+    "commentary": "",
+    "iks_concepts": [
+      "Marutham",
+      "Udal"
+    ],
+    "glossary": {},
+    "metadata": {}
+  },
+  {
+    "id": "AKA-0037",
+    "tamil_text": "பொய்யார் அகலம் விரிந்த தமிழர் நாட்டில் அறம் ஆளும் அரசன் வாழ்வான்.",
+    "english_translation": "In the broad Tamil land where the truthful flourish, the virtuous king who rules righteously will prosper.",
+    "author": "Various Sangam Poets",
+    "work_name": "Akananuru",
+    "chapter": "Verse 37",
+    "verse_number": "37",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Love/Akam",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "George L. Hart",
+    "translator_notes": "A vision of the Tamil land as a place where truth and righteous kingship create prosperity.",
+    "commentary": "",
+    "iks_concepts": [
+      "Vaimai",
+      "Sengol",
+      "Aram"
+    ],
+    "glossary": {},
+    "metadata": {}
+  },
+  {
+    "id": "AKA-0055",
+    "tamil_text": "காடு கடந்தவர் கடன் தீர்க்க மறவாது வந்தனர்.",
+    "english_translation": "Those who crossed the forest came back without forgetting their debt.",
+    "author": "Various Sangam Poets",
+    "work_name": "Akananuru",
+    "chapter": "Verse 55",
+    "verse_number": "55",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Love/Akam",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "George L. Hart",
+    "translator_notes": "The hero's return from the forest journey fulfilling his duty (Vinai) and obligations.",
+    "commentary": "",
+    "iks_concepts": [
+      "Palai",
+      "Vinai"
+    ],
+    "glossary": {},
+    "metadata": {}
+  },
+  {
+    "id": "AKA-0100",
+    "tamil_text": "வேல்வீரன் வெற்றிக்கு மகிழ்ந்த குடிமக்கள் வாகை மாலை சூடினர்.",
+    "english_translation": "The people rejoiced at the warrior's victory and wore garlands of Vakai flowers.",
+    "author": "Various Sangam Poets",
+    "work_name": "Akananuru",
+    "chapter": "Verse 100",
+    "verse_number": "100",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Love/Akam",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "George L. Hart",
+    "translator_notes": "The Vakai flower garland marks celebration of military victory in Puram genre conventions.",
+    "commentary": "",
+    "iks_concepts": [
+      "Vakai",
+      "Viram"
+    ],
+    "glossary": {},
+    "metadata": {}
+  },
+  {
+    "id": "AKA-0082",
+    "tamil_text": "குறிஞ்சி மலரும் குளிர்வளி வீசும் தலைவன் வரும் நாள் என்று தலைவி காத்தாள்.",
+    "english_translation": "The Kurinji flowers bloom, the cool breeze blows — the heroine waited for the day her love would return.",
+    "author": "Various Sangam Poets",
+    "work_name": "Akananuru",
+    "chapter": "Verse 82",
+    "verse_number": "82",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Love/Akam",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "George L. Hart",
+    "translator_notes": "The blooming Kurinji flowers mark seasonal promise — the heroine awaits her lover's return.",
+    "commentary": "",
+    "iks_concepts": [
+      "Kurinji",
+      "Kadal"
+    ],
+    "glossary": {},
+    "metadata": {}
+  }
+]

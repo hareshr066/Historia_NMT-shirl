@@ -38,8 +38,17 @@ SENTENCE_TRANSFORMER_MODEL = settings.get("models", {}).get("sentence_transforme
 SOURCE_LANG = settings.get("models", {}).get("source_lang", "tam_Taml")
 TARGET_LANG = settings.get("models", {}).get("target_lang", "eng_Latn")
 
+# Active Translation model configuration
+TRANSLATION_MODEL_TYPE = settings.get("translation_model", {}).get("type", "indictrans2")
+TRANSLATION_MODEL_NAME = settings.get("translation_model", {}).get("model_name", "ai4bharat/indictrans2-indic-en-dist-200M")
+TRANSLATION_SOURCE_LANG = settings.get("translation_model", {}).get("language", {}).get("source", "tam_Taml")
+TRANSLATION_TARGET_LANG = settings.get("translation_model", {}).get("language", {}).get("target", "eng_Latn")
+TRANSLATION_BEAM_SIZE = settings.get("translation_model", {}).get("beam_size", 5)
+TRANSLATION_MAX_LENGTH = settings.get("translation_model", {}).get("max_length", 256)
+
 LORA_ADAPTER_PATH = os.path.join(
     BASE_DIR, 
     settings.get("training", {}).get("output_dir", "models/checkpoint"), 
     "best_lora_adapter"
 )
+

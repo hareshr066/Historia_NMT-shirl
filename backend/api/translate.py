@@ -43,7 +43,7 @@ def detect_language(text: str) -> str:
 
 class TranslateRequest(BaseModel):
     text: str
-    model: Optional[str] = "nllb"
+    model: Optional[str] = "indictrans2"
     disable_adapter: Optional[bool] = False
 
 class ConceptDetail(BaseModel):
@@ -152,7 +152,7 @@ async def translate_endpoint(request: TranslateRequest, db: Session = Depends(ge
             input_text=request.text,
             output_text=translation,
             raw_baseline_translation=None,
-            model_name=request.model or "nllb",
+            model_name=request.model or "indictrans2",
             latency=round(latency_ms, 2),
             confidence=round(avg_confidence, 2),
             explanation_report=explanation_report
@@ -231,7 +231,7 @@ async def compare_endpoint(request: TranslateRequest, db: Session = Depends(get_
             input_text=request.text,
             output_text=finetuned_translation,
             raw_baseline_translation=baseline_translation,
-            model_name=request.model or "nllb",
+            model_name=request.model or "indictrans2",
             latency=round(latency_ms, 2),
             confidence=round(avg_confidence, 2),
             explanation_report=None
@@ -250,7 +250,7 @@ async def compare_endpoint(request: TranslateRequest, db: Session = Depends(get_
     )
 
 @router.post("/upload")
-async def upload_endpoint(file: UploadFile = File(...), model: Optional[str] = "nllb", db: Session = Depends(get_db)):
+async def upload_endpoint(file: UploadFile = File(...), model: Optional[str] = "indictrans2", db: Session = Depends(get_db)):
     """
     Upload and translate document images or manuscripts (PDF, PNG, JPEG, TIFF).
     OCR parses Tamil text, which is routed directly into the NMT Pipeline.
@@ -506,7 +506,7 @@ async def get_statistics_endpoint(db: Session = Depends(get_db)):
         "total_translations_logged": total_translations,
         "average_latency_ms": round(avg_latency, 2),
         "concept_accuracy_rate": avg_confidence,
-        "active_models": ["opus-mt-mul-en", "nllb-200-distilled"],
+        "active_models": ["indictrans2-indic-en-dist-200M", "nllb-200-distilled"],
         "pipeline_status": "operational"
     }
 

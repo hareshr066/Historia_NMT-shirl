@@ -1,0 +1,28 @@
+[
+  {
+    "id": "AKN-0001",
+    "tamil_text": "அன்னாய் வாழி வேண்டு அன்னை நம் படப்பைத் தேன்மயங்கு பாலினும் இனிய நீர்.",
+    "english_translation": "May you live long, mother! The water in our garden is sweeter than milk mixed with honey.",
+    "author": "Various Sangam Poets",
+    "work_name": "Ainkurunuru",
+    "chapter": "Verse 1",
+    "verse_number": "1",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Love/Akam",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "A.K. Ramanujan",
+    "translator_notes": "Ainkurunuru opening love verse.",
+    "commentary": "Expressing the sweetness of love and nature in the family estate.",
+    "iks_concepts": [
+      "Thinai",
+      "Anbu"
+    ],
+    "glossary": {
+      "அன்னாய்": "mother",
+      "இனிய": "sweet",
+      "நீர்": "water"
+    },
+    "metadata": {}
+  }
+]

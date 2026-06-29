@@ -1,18 +1,23 @@
+from backend.ai.translation.indictrans2_engine import IndicTrans2Engine
 from backend.ai.translation.nllb import NLLBModelHolder
 
 class TranslationRouter:
     @staticmethod
-    def translate(text: str, model_choice: str = "nllb", disable_adapter: bool = False) -> str:
+    def translate(text: str, model_choice: str = "indictrans2", disable_adapter: bool = False) -> str:
         """
         Routes the translation request to the selected model provider.
-        Modular architecture: easily expandable to other models (IndicTrans2, Llama, Qwen, etc.).
+        Default model: IndicTrans2.
+        Backward compatibility: supports NLLB (OPUS-MT) for benchmarking/comparisons.
         """
         model_choice_clean = model_choice.lower().strip()
         
         if model_choice_clean == "nllb" or model_choice_clean == "opus-mt":
-            # Delegate to our NLLB module
+            # Route to NLLB/OPUS-MT engine for benchmarking
             return NLLBModelHolder.translate(text, disable_adapter=disable_adapter)
+        elif model_choice_clean == "indictrans2":
+            # Route to the new IndicTrans2 engine
+            return IndicTrans2Engine.translate(text, disable_adapter=disable_adapter)
         else:
-            # Fallback/default to NLLB-200
-            print(f"Model '{model_choice}' not yet fully loaded or unsupported. Defaulting to NLLB.")
-            return NLLBModelHolder.translate(text, disable_adapter=disable_adapter)
+            # Default to IndicTrans2
+            print(f"Model '{model_choice}' unsupported. Defaulting to IndicTrans2.")
+            return IndicTrans2Engine.translate(text, disable_adapter=disable_adapter)

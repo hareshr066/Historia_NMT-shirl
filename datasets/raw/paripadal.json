@@ -1,0 +1,54 @@
+[
+  {
+    "id": "PAR-0001",
+    "tamil_text": "தீயினுள் தெறல் நீ பூவினுள் நாற்றம் நீ கல்லினுள் மணியும் நீ.",
+    "english_translation": "Thy heat is in the fire; thy fragrance is in the flower; thy luster is in the gem.",
+    "author": "Kaduvan Ilaveyinanar",
+    "work_name": "Paripadal",
+    "chapter": "Poem 4: Praise of Thirumal",
+    "verse_number": "25",
+    "era": "Sangam (c. 1st–3rd century CE)",
+    "literary_category": "Devotional/Musical",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "A. Dakshinamurthy",
+    "translator_notes": "Omnipresence of the Supreme.",
+    "commentary": "He is the essence of all elements, colors, and virtues.",
+    "iks_concepts": [
+      "Arul"
+    ],
+    "glossary": {
+      "தீயினுள்": "within fire",
+      "தெறல்": "heat",
+      "பூவினுள்": "within flower",
+      "நாற்றம்": "fragrance"
+    },
+    "metadata": {}
+  },
+  {
+    "id": "PAR-0002",
+    "tamil_text": "ஞாயிற்று வெம்மையும் திங்களுள் தண்மையும் மழையுள் வண்மையும் நீ.",
+    "english_translation": "Thy fieriness is in the sun; thy gentleness is in the moon; thy bounty is in the rain.",
+    "author": "Kaduvan Ilaveyinanar",
+    "work_name": "Paripadal",
+    "chapter": "Poem 4: Praise of Thirumal",
+    "verse_number": "26",
+    "era": "Sangam (c. 1st–3rd century CE)",
+    "literary_category": "Devotional/Musical",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "A. Dakshinamurthy",
+    "translator_notes": "Nature manifestations of the divine.",
+    "commentary": "Praising the divine character as balanced between strength and benevolence.",
+    "iks_concepts": [
+      "Arul",
+      "Anbu"
+    ],
+    "glossary": {
+      "ஞாயிற்று": "of sun",
+      "திங்களுள்": "within moon",
+      "மழையுள்": "within rain"
+    },
+    "metadata": {}
+  }
+]

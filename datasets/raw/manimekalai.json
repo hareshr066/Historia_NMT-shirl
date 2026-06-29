@@ -1,0 +1,138 @@
+[
+  {
+    "id": "MMK-0001",
+    "tamil_text": "உண்டி கொடுத்தோர் உயிர் கொடுத்தோரே.",
+    "english_translation": "Those who give food give life itself.",
+    "author": "Cittalai Cattanar",
+    "work_name": "Manimekalai",
+    "chapter": "Passage 3",
+    "verse_number": "3",
+    "era": "Post-Sangam (c. 5th–6th century CE)",
+    "literary_category": "Epic/Narrative",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "Alain Danielou",
+    "translator_notes": "Praise of food charity.",
+    "commentary": "Food sustains life, and therefore feeding the hungry is the ultimate virtue.",
+    "iks_concepts": [
+      "Aram",
+      "Arul"
+    ],
+    "glossary": {
+      "உண்டி": "food",
+      "கொடுத்தோர்": "those who gave",
+      "உயிர்": "life"
+    },
+    "metadata": {}
+  },
+  {
+    "id": "MMK-MM-1",
+    "tamil_text": "அறவழி நடப்பவரே அமைதியான மனதை அடைவர்.",
+    "english_translation": "Only those who walk the path of virtue attain a peaceful mind.",
+    "author": "Cittalai Cattanar",
+    "work_name": "Manimekalai",
+    "chapter": "Passage MM-1",
+    "verse_number": "MM-1",
+    "era": "Post-Sangam (c. 5th–6th century CE)",
+    "literary_category": "Epic/Narrative",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "Alain Danielou",
+    "translator_notes": "Manimekalai's Buddhist ethic — virtue (Aram/Dharma) leads to mental peace.",
+    "commentary": "",
+    "iks_concepts": [
+      "Aram",
+      "Thavam"
+    ],
+    "glossary": {},
+    "metadata": {}
+  },
+  {
+    "id": "MMK-MM-6",
+    "tamil_text": "கல்வி கற்றோரே உண்மையான செல்வர் அல்லர் பொருள் உடையோரே.",
+    "english_translation": "Those who have gained learning are the truly wealthy, not those who merely have material possessions.",
+    "author": "Cittalai Cattanar",
+    "work_name": "Manimekalai",
+    "chapter": "Passage MM-6",
+    "verse_number": "MM-6",
+    "era": "Post-Sangam (c. 5th–6th century CE)",
+    "literary_category": "Epic/Narrative",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "Alain Danielou",
+    "translator_notes": "The Manimekalai's elevation of learning over material wealth as the measure of true richness.",
+    "commentary": "",
+    "iks_concepts": [
+      "Porul",
+      "Ozhukkam"
+    ],
+    "glossary": {},
+    "metadata": {}
+  },
+  {
+    "id": "MMK-MM-5",
+    "tamil_text": "பிறர் இன்பத்தில் மகிழ்வதே மேலான அறம்.",
+    "english_translation": "To rejoice in the happiness of others is the highest virtue.",
+    "author": "Cittalai Cattanar",
+    "work_name": "Manimekalai",
+    "chapter": "Passage MM-5",
+    "verse_number": "MM-5",
+    "era": "Post-Sangam (c. 5th–6th century CE)",
+    "literary_category": "Epic/Narrative",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "Alain Danielou",
+    "translator_notes": "Universal compassion (Arul) expressed as the capacity to feel joy in others' happiness.",
+    "commentary": "",
+    "iks_concepts": [
+      "Arul",
+      "Anbu"
+    ],
+    "glossary": {},
+    "metadata": {}
+  },
+  {
+    "id": "MMK-MM-4",
+    "tamil_text": "அன்னை ஆவுடையார் தன் வாழ்க்கையை அறத்திற்கு அர்ப்பணித்தாள்.",
+    "english_translation": "Auvudaiyar dedicated her life entirely to virtue (Aram).",
+    "author": "Cittalai Cattanar",
+    "work_name": "Manimekalai",
+    "chapter": "Passage MM-4",
+    "verse_number": "MM-4",
+    "era": "Post-Sangam (c. 5th–6th century CE)",
+    "literary_category": "Epic/Narrative",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "Alain Danielou",
+    "translator_notes": "The heroine's renunciation and dedication to virtue mirrors the Buddhist path of the text.",
+    "commentary": "",
+    "iks_concepts": [
+      "Aram",
+      "Thavam"
+    ],
+    "glossary": {},
+    "metadata": {}
+  },
+  {
+    "id": "MMK-MM-2",
+    "tamil_text": "மாணிக்கவாசகர் கொடை உலகம் புகழும் திறன் உடையது.",
+    "english_translation": "The generosity of Manikkavacakar is capable of winning the praise of the whole world.",
+    "author": "Cittalai Cattanar",
+    "work_name": "Manimekalai",
+    "chapter": "Passage MM-2",
+    "verse_number": "MM-2",
+    "era": "Post-Sangam (c. 5th–6th century CE)",
+    "literary_category": "Epic/Narrative",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "Alain Danielou",
+    "translator_notes": "Generosity (Igai) as the path to eternal fame (Pukazh) in the Manimekalai tradition.",
+    "commentary": "",
+    "iks_concepts": [
+      "Igai",
+      "Pukazh"
+    ],
+    "glossary": {},
+    "metadata": {}
+  }
+]

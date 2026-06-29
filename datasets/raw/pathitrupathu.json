@@ -1,0 +1,117 @@
+[
+  {
+    "id": "PTR-0011",
+    "tamil_text": "வளம் கெழு வேந்தன் வஞ்சி மூதூர் வலம்புரி கொண்டமர் வென்றோன்.",
+    "english_translation": "The prosperous king who won victory in battle taking the right-spinning conch at the ancient city of Vanji.",
+    "author": "Kummattur Kannanar",
+    "work_name": "Pathitrupathu",
+    "chapter": "Verse 11",
+    "verse_number": "11",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Heroic/Puram",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "George L. Hart",
+    "translator_notes": "Chera military eulogy.",
+    "commentary": "Praising the dynastic victories of the Chera rulers.",
+    "iks_concepts": [
+      "Sanror"
+    ],
+    "glossary": {
+      "வேந்தன்": "king",
+      "கொண்டமர்": "won battle"
+    },
+    "metadata": {}
+  },
+  {
+    "id": "PTR-0031",
+    "tamil_text": "கொடைக்கடன் பூண்ட சேரன் கொற்றவன் வலியால் வாழ்ந்தனன்.",
+    "english_translation": "The Chera king who wore the debt of generosity lived by the strength of his valor.",
+    "author": "Various Sangam Poets",
+    "work_name": "Pathitrupathu",
+    "chapter": "Verse 31",
+    "verse_number": "31",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Heroic/Puram",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "George L. Hart",
+    "translator_notes": "Chera king's twin virtues of generosity (Kodai) and valor (Viram) as the foundation of his reign.",
+    "commentary": "",
+    "iks_concepts": [
+      "Kodai",
+      "Viram",
+      "Arasan"
+    ],
+    "glossary": {},
+    "metadata": {}
+  },
+  {
+    "id": "PTR-0041",
+    "tamil_text": "குடிகளைக் காத்த மன்னன் தன் நாட்டில் மழை பெய்தது போல் வாழ்ந்தான்.",
+    "english_translation": "The king who protected his subjects lived like rain falling in his own land.",
+    "author": "Various Sangam Poets",
+    "work_name": "Pathitrupathu",
+    "chapter": "Verse 41",
+    "verse_number": "41",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Heroic/Puram",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "George L. Hart",
+    "translator_notes": "The good king's protection of subjects compared to life-giving rain — the highest duty of rulership.",
+    "commentary": "",
+    "iks_concepts": [
+      "Arasan",
+      "Aram",
+      "Sengol"
+    ],
+    "glossary": {},
+    "metadata": {}
+  },
+  {
+    "id": "PTR-0022",
+    "tamil_text": "தண்மழை தலைத்தலை சுரந்து வான் பொழிய ஒண்ணுதல் மகளிர் ஆடிய நீரே.",
+    "english_translation": "Cold rains poured season after season; the waters where bright-faced women bathed.",
+    "author": "Various Sangam Poets",
+    "work_name": "Pathitrupathu",
+    "chapter": "Verse 22",
+    "verse_number": "22",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Heroic/Puram",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "George L. Hart",
+    "translator_notes": "Pathitrupathu evocation of seasonal abundance connected to the good governance of the Chera king.",
+    "commentary": "",
+    "iks_concepts": [
+      "Vrunthompal",
+      "Aram"
+    ],
+    "glossary": {},
+    "metadata": {}
+  },
+  {
+    "id": "PTR-0052",
+    "tamil_text": "புலவர் பாடும் புகழை விரும்பிய வேந்தன் கொடை கொடுத்தான்.",
+    "english_translation": "The king who desired the fame that poets would sing gave generously.",
+    "author": "Various Sangam Poets",
+    "work_name": "Pathitrupathu",
+    "chapter": "Verse 52",
+    "verse_number": "52",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Heroic/Puram",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "George L. Hart",
+    "translator_notes": "The patron king's generosity is motivated by the desire for the lasting fame that poets confer.",
+    "commentary": "",
+    "iks_concepts": [
+      "Pukazh",
+      "Kodai",
+      "Arasan"
+    ],
+    "glossary": {},
+    "metadata": {}
+  }
+]
