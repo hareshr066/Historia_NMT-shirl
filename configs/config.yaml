@@ -1,5 +1,14 @@
 # Config file for IKS-Aware Neural Machine Translation
 
+translation_model:
+  type: indictrans2
+  model_name: "ai4bharat/indictrans2-indic-en-dist-200M"
+  language:
+    source: "tam_Taml"
+    target: "eng_Latn"
+  beam_size: 5
+  max_length: 256
+
 # Knowledge Base Configurations
 kb:
   raw_data_dir: "knowledge_base"
@@ -11,13 +20,16 @@ kb:
 
 # Dataset Configurations
 data:
-  raw_data_dir: "datasets"
+  raw_data_dir: "datasets/raw"
+  processed_data_dir: "datasets/processed"
+  augmented_data_dir: "datasets/augmented"
+  metadata_data_dir: "datasets/metadata"
   csv_path: "datasets/classical_tamil_parallel.csv"
   json_path: "datasets/classical_tamil_parallel.json"
   parquet_path: "datasets/classical_tamil_parallel.parquet"
-  train_path: "datasets/train.jsonl"
-  val_path: "datasets/validation.jsonl"
-  test_path: "datasets/test.jsonl"
+  train_path: "datasets/train/train.jsonl"
+  val_path: "datasets/validation/validation.jsonl"
+  test_path: "datasets/test/test.jsonl"
   split_ratios:
     train: 0.8
     val: 0.1

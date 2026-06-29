@@ -233,95 +233,43 @@ def load_nmt_pipeline():
     import pandas as pd
     import scipy
     import sklearn
-    
-    # Monkey-patch check_torch_load_is_safe to bypass CVE-2025-32434 check
-    # (works across transformers versions that may place it in different modules)
-    try:
-        import transformers.utils.import_utils
-        transformers.utils.import_utils.check_torch_load_is_safe = lambda: None
-    except (ImportError, AttributeError):
-        pass
-    try:
-        import transformers.modeling_utils
-        transformers.modeling_utils.check_torch_load_is_safe = lambda: None
-    except (ImportError, AttributeError):
-        pass
-    try:
-        import transformers.utils
-        transformers.utils.check_torch_load_is_safe = lambda: None
-    except (ImportError, AttributeError):
-        pass
-
     import torch
     import yaml
-    from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
-    from peft import PeftModel
-
+    
     # Setup path so augment/detector/retriever/ranker can be imported
     scripts_path = os.path.abspath('scripts')
     if scripts_path not in sys.path:
         sys.path.insert(0, scripts_path)
-    from augment import IKSInputAugmenter
-    from explain import IKSExplainer
+        
+    from backend.ai.retrieval.augment import IKSInputAugmenter
+    from backend.ai.explain.explanation import IKSExplainer
+    from backend.core.model_loader import ModelLoader
+    from backend.core.config import TRANSLATION_MODEL_NAME
 
-    config_path = "configs/config.yaml"
-    with open(config_path, "r", encoding="utf-8") as f:
-        config = yaml.safe_load(f)
+    # Preload default tokenizer and model
+    ModelLoader.load_tokenizer("indictrans2", TRANSLATION_MODEL_NAME)
+    ModelLoader.load_model("indictrans2", TRANSLATION_MODEL_NAME)
 
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-
-    # Instantiate pipeline modules
-    augmenter = IKSInputAugmenter(config_path)
+    augmenter = IKSInputAugmenter()
     explainer = IKSExplainer()
 
-    # Load Opus-MT (MarianMT) translation model
-    model_name = config["models"]["nllb"]  # points to models/opus-mt-mul-en
-    tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
+    device = ModelLoader.get_device("indictrans2").upper()
 
-    base_model = AutoModelForSeq2SeqLM.from_pretrained(
-        model_name,
-        trust_remote_code=True,
-        torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32
-    )
-
-    adapter_path = os.path.join(config["training"]["output_dir"], "best_lora_adapter")
-    if os.path.exists(adapter_path):
-        finetuned_model = PeftModel.from_pretrained(base_model, adapter_path)
-    else:
-        finetuned_model = base_model
-
-    finetuned_model = finetuned_model.to(device)
-    finetuned_model.eval()
-
-    # NOTE: opus-mt-mul-en is a MarianMT model — it does NOT use src_lang/tgt_lang
-    # attributes. Language selection for Tamil is handled automatically via the >>tam<<
-    # prefix token in the source text (if the model supports it). No attribute assignment needed.
-
-    return augmenter, explainer, tokenizer, finetuned_model, device
+    return augmenter, explainer, device
 
 # Loading components inside a spinner
 with st.spinner("Initializing models and FAISS knowledge base (loading weights to GPU/CPU)..."):
     try:
-        augmenter, explainer, tokenizer, translation_model, device = load_nmt_pipeline()
+        augmenter, explainer, device = load_nmt_pipeline()
         st.success("Translation models and IKS Knowledge Base loaded successfully on device: " + device)
     except Exception as e:
         st.error(f"Error loading translation models: {e}")
         st.stop()
 
-# Helper function to generate translation using Opus-MT (MarianMT)
-def translate_text(text, model, tokenizer, device, disable_adapter=False):
-    import torch
-    # Opus-MT mul-en uses >>tam<< language tag prepended to source text for Tamil
-    # This tells the multilingual model which source language to translate from.
-    prefixed_text = f">>tam<< {text}"
-    inputs = tokenizer(prefixed_text, return_tensors="pt", truncation=True, max_length=256).to(device)
-    with torch.no_grad():
-        if disable_adapter and hasattr(model, "disable_adapter"):
-            with model.disable_adapter():
-                outputs = model.generate(**inputs, max_length=256, num_beams=5)
-        else:
-            outputs = model.generate(**inputs, max_length=256, num_beams=5)
-    return tokenizer.batch_decode(outputs, skip_special_tokens=True)[0].strip()
+# Helper function to generate translation using IndicTrans2
+def translate_text(text, disable_adapter=False):
+    from backend.ai.translation.router import TranslationRouter
+    return TranslationRouter.translate(text, model_choice="indictrans2", disable_adapter=disable_adapter)
 
 # Layout splits
 left_panel, right_panel = st.columns([1, 1.2])
@@ -377,23 +325,19 @@ with right_panel:
             
         # 2. Pipeline - Translation
         with st.spinner("Translating using Seq2Seq model..."):
+            t_start = time.time()
             # Translate baseline (adapter disabled, original text)
             baseline_translation = translate_text(
                 target_text, 
-                translation_model, 
-                tokenizer, 
-                device, 
                 disable_adapter=True
             )
             
             # Translate augmented (adapter active, augmented text)
             augmented_translation = translate_text(
                 aug_result["augmented"], 
-                translation_model, 
-                tokenizer, 
-                device, 
                 disable_adapter=False
             )
+            inference_time_ms = (time.time() - t_start) * 1000.0
             
         # 3. Pipeline - Explainer
         explanation_report = explainer.generate_explanation(
@@ -417,6 +361,15 @@ with right_panel:
                 
         # Confidence Metrics Row
         st.write("### 📈 Pipeline Metrics")
+        from backend.core.config import LORA_ADAPTER_PATH
+        model_ver = "v1.0-default"
+        if os.path.exists(LORA_ADAPTER_PATH):
+            ver_file = os.path.join(LORA_ADAPTER_PATH, "model_version.txt")
+            if os.path.exists(ver_file):
+                with open(ver_file, "r", encoding="utf-8") as f:
+                    model_ver = f.read().strip()
+        lora_status = "Active" if os.path.exists(LORA_ADAPTER_PATH) else "None"
+
         st.markdown(f"""
         <div class="metric-grid">
             <div class="metric-card">
@@ -430,9 +383,14 @@ with right_panel:
                 <div class="metric-footer">Multilingual Cosine Sim</div>
             </div>
             <div class="metric-card">
-                <div class="metric-label">Active Model</div>
-                <div class="metric-value">Opus MT</div>
-                <div class="metric-footer">PEFT/LoRA Adapter</div>
+                <div class="metric-label">Inference Time</div>
+                <div class="metric-value">{inference_time_ms:.1f} ms</div>
+                <div class="metric-footer">Model: IndicTrans2 ({device})</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">LoRA Adapter & Version</div>
+                <div class="metric-value">{lora_status}</div>
+                <div class="metric-footer">Ver: {model_ver}</div>
             </div>
         </div>
         """, unsafe_allow_html=True)

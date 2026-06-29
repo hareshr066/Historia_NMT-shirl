@@ -1,0 +1,50 @@
+[
+  {
+    "id": "TOL-0001",
+    "tamil_text": "எழுத்து எனப்படுபவ அகர முதல் னகர இறுவாய் முப்பஃது என்ப.",
+    "english_translation": "The sounds called letters are thirty in number, starting with 'A' and ending with 'N'.",
+    "author": "Tolkappiyar",
+    "work_name": "Tolkappiyam",
+    "chapter": "Eluttatikaram: Section 1",
+    "verse_number": "1",
+    "era": "Pre-Sangam (c. 300 BCE)",
+    "literary_category": "Grammatical/Linguistic",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "P.S. Subrahmanya Sastri",
+    "translator_notes": "The thirty basic phonemes of Tamil.",
+    "commentary": "Defines the core phonemic structure of Tamil.",
+    "iks_concepts": [
+      "Thinai"
+    ],
+    "glossary": {
+      "எழுத்து": "letter/sound",
+      "முப்பஃது": "thirty"
+    },
+    "metadata": {}
+  },
+  {
+    "id": "TOL-0002",
+    "tamil_text": "மெய்யின் இயற்கை புள்ளியோடு நிலையல்.",
+    "english_translation": "The nature of a consonant is to stand with a dot.",
+    "author": "Tolkappiyar",
+    "work_name": "Tolkappiyam",
+    "chapter": "Eluttatikaram: Section 2",
+    "verse_number": "2",
+    "era": "Pre-Sangam (c. 300 BCE)",
+    "literary_category": "Grammatical/Linguistic",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "P.S. Subrahmanya Sastri",
+    "translator_notes": "Orthographic dot for consonants.",
+    "commentary": "Consonants are represented orthographically with a dot (pulli).",
+    "iks_concepts": [
+      "Thinai"
+    ],
+    "glossary": {
+      "மெய்யின்": "of consonant",
+      "புள்ளியோடு": "with dot"
+    },
+    "metadata": {}
+  }
+]

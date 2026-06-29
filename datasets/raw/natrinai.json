@@ -1,0 +1,228 @@
+[
+  {
+    "id": "NAT-0001",
+    "tamil_text": "நெய்தல் நிலத்துத் தலைவி கடலையே நோக்கி நின்றாள்.",
+    "english_translation": "The heroine of the coastal land stood gazing at the sea, weeping for her departed lover.",
+    "author": "Murinjiyur Mudinagarayar",
+    "work_name": "Natrinai",
+    "chapter": "Verse 1",
+    "verse_number": "1",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Love/Akam",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "A.K. Ramanujan",
+    "translator_notes": "Neythal landscape context.",
+    "commentary": "The seashore landscape (Neythal) reflects grief and separation (Pirivu).",
+    "iks_concepts": [
+      "Thinai"
+    ],
+    "glossary": {
+      "நெய்தல்": "coastal tinai",
+      "தலைவி": "heroine",
+      "கடலையே": "at the sea"
+    },
+    "metadata": {}
+  },
+  {
+    "id": "NAT-0045",
+    "tamil_text": "இன்சொல் பேசும் தோழி தோழியின் துணை இன்றி வாழ்க்கை இல்லை.",
+    "english_translation": "The confidante who speaks sweetly — without her friendship, life itself is empty.",
+    "author": "Various Sangam Poets",
+    "work_name": "Natrinai",
+    "chapter": "Verse 45",
+    "verse_number": "45",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Love/Akam",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "A.K. Ramanujan",
+    "translator_notes": "The crucial role of the female confidante (Thozhi) in Sangam love poetry.",
+    "commentary": "",
+    "iks_concepts": [
+      "Thozhi",
+      "Anbu"
+    ],
+    "glossary": {},
+    "metadata": {}
+  },
+  {
+    "id": "NAT-0004",
+    "tamil_text": "இனியோர் தமரால் இரவின் துறைவன் இனியோர் தமரால் கல்லென்று ஒலிக்கும் கடலே.",
+    "english_translation": "By the night shore of my beloved, the sea roars like a crowd of dear ones.",
+    "author": "Various Sangam Poets",
+    "work_name": "Natrinai",
+    "chapter": "Verse 4",
+    "verse_number": "4",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Love/Akam",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "A.K. Ramanujan",
+    "translator_notes": "The roaring sea becomes a metaphor for longing and the beloved's presence in absence.",
+    "commentary": "",
+    "iks_concepts": [
+      "Neythal",
+      "Kadal"
+    ],
+    "glossary": {},
+    "metadata": {}
+  },
+  {
+    "id": "NAT-0012",
+    "tamil_text": "வேல்போல் நெடுங்கண் துயில்வில நன்ஞாயிற் றுயரம் செய்யாய் கதிர் காய்ந்தவரே.",
+    "english_translation": "Long eyes like spears cannot sleep; do not torment, O bright sun, those whose love is scorched.",
+    "author": "Various Sangam Poets",
+    "work_name": "Natrinai",
+    "chapter": "Verse 12",
+    "verse_number": "12",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Love/Akam",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "A.K. Ramanujan",
+    "translator_notes": "The heroine's sleepless eyes are compared to spears; the sun's heat amplifies her longing.",
+    "commentary": "",
+    "iks_concepts": [
+      "Neythal",
+      "Pirivu",
+      "Kadal"
+    ],
+    "glossary": {},
+    "metadata": {}
+  },
+  {
+    "id": "NAT-0006",
+    "tamil_text": "குளிர்வளி வீசும் குறிஞ்சி நில வரை மலர்கள் சூடி நிற்கும் தலைவி.",
+    "english_translation": "The heroine stands on the cool-breeze mountain slope of Kurinji, adorned with hill flowers.",
+    "author": "Various Sangam Poets",
+    "work_name": "Natrinai",
+    "chapter": "Verse 6",
+    "verse_number": "6",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Love/Akam",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "A.K. Ramanujan",
+    "translator_notes": "The Kurinji mountain landscape sets the mood for secret pre-marital love (Kalavu).",
+    "commentary": "",
+    "iks_concepts": [
+      "Kurinji",
+      "Kadal"
+    ],
+    "glossary": {},
+    "metadata": {}
+  },
+  {
+    "id": "NAT-0015",
+    "tamil_text": "நண்பகல் வெம்மை தணிக்கும் தாமரை பொய்கையின் குளிர்ந்த நீர் போல நட்பு.",
+    "english_translation": "Friendship is like the cool waters of a lotus pond that quench midday heat.",
+    "author": "Various Sangam Poets",
+    "work_name": "Natrinai",
+    "chapter": "Verse 15",
+    "verse_number": "15",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Love/Akam",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "A.K. Ramanujan",
+    "translator_notes": "Friendship compared to the cooling waters of a lotus pond — refreshing and essential.",
+    "commentary": "",
+    "iks_concepts": [
+      "Anbu",
+      "Panpu"
+    ],
+    "glossary": {},
+    "metadata": {}
+  },
+  {
+    "id": "NAT-0023",
+    "tamil_text": "வாழ்க்கையே அரமியம் வாழ்வோர்க்கும் இல்லற நெறியிலே நின்றவர் வாழ்வு.",
+    "english_translation": "Life itself is the palace; for those who walk the domestic path of virtue, life is true living.",
+    "author": "Various Sangam Poets",
+    "work_name": "Natrinai",
+    "chapter": "Verse 23",
+    "verse_number": "23",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Love/Akam",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "A.K. Ramanujan",
+    "translator_notes": "Domestic virtue transforms ordinary life into a palace of righteousness.",
+    "commentary": "",
+    "iks_concepts": [
+      "Illaram",
+      "Aram"
+    ],
+    "glossary": {},
+    "metadata": {}
+  },
+  {
+    "id": "NAT-0034",
+    "tamil_text": "கடல் நோக்கி நிற்கும் தலைவியின் கண்ணீர் தடம் கடலிலும் பெரியது.",
+    "english_translation": "The tears of the heroine gazing at the sea are larger than the vast sea itself.",
+    "author": "Various Sangam Poets",
+    "work_name": "Natrinai",
+    "chapter": "Verse 34",
+    "verse_number": "34",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Love/Akam",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "A.K. Ramanujan",
+    "translator_notes": "Hyperbole of the heroine's grief — her tears surpass the ocean in magnitude.",
+    "commentary": "",
+    "iks_concepts": [
+      "Neythal",
+      "Pirivu",
+      "Kadal"
+    ],
+    "glossary": {},
+    "metadata": {}
+  },
+  {
+    "id": "NAT-0009",
+    "tamil_text": "முல்லை நிலத்து மழை பொழியும் மாலையில் தலைவன் வாராத வேண்டும் தலைவிக்கு.",
+    "english_translation": "In the pastoral Mullai land when evening rains fall, the heroine waits for her love to return.",
+    "author": "Various Sangam Poets",
+    "work_name": "Natrinai",
+    "chapter": "Verse 9",
+    "verse_number": "9",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Love/Akam",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "A.K. Ramanujan",
+    "translator_notes": "The Mullai landscape's rainy evening heightens the heroine's patient longing for her hero.",
+    "commentary": "",
+    "iks_concepts": [
+      "Mullai",
+      "Pirivu"
+    ],
+    "glossary": {},
+    "metadata": {}
+  },
+  {
+    "id": "NAT-0052",
+    "tamil_text": "பாலை நிலத்தில் பிரிந்த காதலன் வரும் நாள் வரை பொறுத்திருக்கும் கல்மனம்.",
+    "english_translation": "In the arid Palai landscape, the heroine's stone-like heart waits until her love returns.",
+    "author": "Various Sangam Poets",
+    "work_name": "Natrinai",
+    "chapter": "Verse 52",
+    "verse_number": "52",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Love/Akam",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "A.K. Ramanujan",
+    "translator_notes": "The arid Palai landscape represents separation; the heroine's patient endurance is like stone.",
+    "commentary": "",
+    "iks_concepts": [
+      "Palai",
+      "Pirivu",
+      "Kadal"
+    ],
+    "glossary": {},
+    "metadata": {}
+  }
+]

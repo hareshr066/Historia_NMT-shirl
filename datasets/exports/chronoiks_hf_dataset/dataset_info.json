@@ -1,0 +1,414 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "work_name": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "author": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "translator": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "era": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "literary_type": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "chapter": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "verse_number": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "tamil_text": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "english_translation": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "alternate_translations": {
+      "feature": {
+        "dtype": "null",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "commentary": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "glossary": {
+      "\u0b85\u0b95\u0bb0": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b85\u0ba9\u0bcd\u0ba9\u0bbe\u0baf\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b85\u0ba9\u0bcd\u0baa\u0bbf\u0bb2\u0bbe\u0bb0\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b85\u0bb0\u0bc1\u0b9f\u0bcd\u0b9a\u0bc6\u0bb2\u0bcd\u0bb5\u0bae\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b85\u0bb1\u0ba4\u0bcd\u0ba4\u0bbe\u0bb1\u0bbf\u0ba9\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b86\u0b9f\u0bb5\u0bb0\u0bcd\u0b95\u0bcd\u0b95\u0bc1": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b87\u0ba9\u0bbf\u0baf": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b87\u0bb2\u0bcd\u0bb5\u0bbe\u0bb4\u0bcd\u0b95\u0bcd\u0b95\u0bc8": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b88\u0ba9\u0bcd\u0bb1\u0bc1": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b89\u0ba3\u0bcd\u0b9f\u0bb2\u0bc1\u0bae\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b89\u0ba3\u0bcd\u0b9f\u0bbf": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b89\u0baf\u0bb0\u0bcd\u0bb5\u0bc1": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b89\u0baf\u0bbf\u0bb0\u0bc7": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b89\u0baf\u0bbf\u0bb0\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b89\u0bb0\u0bbf\u0baf\u0bb0\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b89\u0bb2\u0b95\u0bc1": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b8a\u0bb0\u0bc7": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b8a\u0bb4\u0bbf\u0bb2\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b8e\u0bb4\u0bc1\u0ba4\u0bcd\u0ba4\u0bc1": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b8e\u0bb4\u0bc1\u0ba4\u0bcd\u0ba4\u0bc6\u0bb2\u0bcd\u0bb2\u0bbe\u0bae\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b90\u0ba8\u0bcd\u0ba4\u0bbf\u0ba3\u0bc8": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b92\u0bb4\u0bc1\u0b95\u0bcd\u0b95\u0bae\u0bc7": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b95\u0b9f\u0bb2\u0bc8\u0baf\u0bc7": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b95\u0bb1\u0bcd\u0bb1\u0ba4\u0ba9\u0bbe\u0bb2\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b95\u0bc7\u0bb3\u0bbe\u0baf\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b95\u0bc7\u0bb3\u0bbf\u0bb0\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b95\u0bca\u0b9f\u0bc1\u0ba4\u0bcd\u0ba4\u0bcb\u0bb0\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b95\u0bca\u0ba3\u0bcd\u0b9f\u0bae\u0bb0\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b9a\u0bbe\u0ba9\u0bcd\u0bb1\u0bcb\u0ba9\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b9a\u0bc1\u0b9f\u0bb0\u0bcd\u0ba4\u0bcd\u0ba4\u0bca\u0b9f\u0bc0\u0b87": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b9a\u0bc6\u0b99\u0bcd\u0b95\u0bcb\u0bb2\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b9a\u0bc6\u0bae\u0bcd\u0baa\u0bc1\u0bb2": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b9a\u0bc6\u0baf\u0bcd\u0baf\u0bbe\u0bae\u0bc8": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b9a\u0bc6\u0bb2\u0bcd\u0bb5\u0ba4\u0bcd\u0ba4\u0bc1\u0bb3\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0b9e\u0bbe\u0baf\u0bbf\u0bb1\u0bcd\u0bb1\u0bc1": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0ba4\u0bae\u0bbf\u0baf\u0bb0\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0ba4\u0bb2\u0bc8\u0bb5\u0bbf": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0ba4\u0bbf\u0b99\u0bcd\u0b95\u0bb3\u0bc1\u0bb3\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0ba4\u0bbf\u0ba3\u0bc8\u0b95\u0bb3\u0bbf\u0ba9\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0ba4\u0bc0\u0baf\u0bbf\u0ba9\u0bc1\u0bb3\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0ba4\u0bc6\u0bb1\u0bb2\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0ba4\u0bca\u0bb4\u0bbe\u0b85\u0bb0\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0ba8\u0b9f\u0bcd\u0baa\u0bc7": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0ba8\u0bbe\u0b9f\u0ba9\u0bcb\u0b9f\u0bc1": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0ba8\u0bbe\u0bb1\u0bcd\u0bb1\u0bae\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0ba8\u0bbf\u0bb2\u0ba4\u0bcd\u0ba4\u0bbf\u0ba9\u0bc1\u0bae\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0ba8\u0bc0\u0bb0\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0ba8\u0bc6\u0b9e\u0bcd\u0b9a\u0bae\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0ba8\u0bc6\u0b9f\u0bc1\u0bae\u0bcd\u0b9a\u0bc1\u0bb5\u0bb0\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0ba8\u0bc6\u0baf\u0bcd\u0ba4\u0bb2\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0ba8\u0bcb\u0bb1\u0bcd\u0bb1\u0bb2\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0baa\u0b9f\u0bcd\u0b9f\u0bbf\u0ba9\u0bae\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0baa\u0baf\u0ba9\u0bc6\u0ba9\u0bcd\u0b95\u0bca\u0bb2\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0baa\u0bbf\u0bb1\u0ba8\u0bcd\u0ba4\u0bbe\u0bb2\u0bc1\u0bae\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0baa\u0bc1\u0bb3\u0bcd\u0bb3\u0bbf\u0baf\u0bcb\u0b9f\u0bc1": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0baa\u0bc2\u0bb5\u0bbf\u0ba9\u0bc1\u0bb3\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0baa\u0bc6\u0baf\u0bb2\u0bcd\u0ba8\u0bc0\u0bb0\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0baa\u0bc6\u0bb0\u0bbf\u0ba4\u0bc7": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0baa\u0bc6\u0bb0\u0bc1\u0bb5\u0bb2\u0bbf": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0baa\u0bc6\u0bb1\u0bbf\u0ba9\u0bc1\u0bae\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0bae\u0bb4\u0bc8": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0bae\u0bb4\u0bc8\u0baf\u0bc1\u0bb3\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0bae\u0bc1\u0ba4\u0bb2": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0bae\u0bc1\u0baa\u0bcd\u0baa\u0b83\u0ba4\u0bc1": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0bae\u0bc6\u0baf\u0bcd\u0baf\u0bbf\u0ba9\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0baf\u0bbe\u0ba4\u0bc1\u0bae\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0bb5\u0bb3\u0bc8\u0ba8\u0bcd\u0ba4\u0bbe\u0bb2\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0bb5\u0bbe\u0bb0\u0bc7\u0ba9\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0bb5\u0bbf\u0ba9\u0bc8\u0baf\u0bc7": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0bb5\u0bbf\u0bb3\u0b95\u0bcd\u0b95\u0bc7": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "\u0bb5\u0bc7\u0ba8\u0bcd\u0ba4\u0ba9\u0bcd": {
+        "dtype": "string",
+        "_type": "Value"
+      }
+    },
+    "iks_concepts": {
+      "feature": {
+        "concept_id": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "confidence": {
+          "dtype": "float64",
+          "_type": "Value"
+        },
+        "historical_era": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "meaning": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "name": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "related_concepts": {
+          "feature": {
+            "dtype": "string",
+            "_type": "Value"
+          },
+          "_type": "List"
+        }
+      },
+      "_type": "List"
+    },
+    "concept_ids": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "semantic_tags": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "source_reference": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "license": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "quality_score": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "is_valid": {
+      "dtype": "bool",
+      "_type": "Value"
+    },
+    "validation_errors": {
+      "feature": {
+        "dtype": "null",
+        "_type": "Value"
+      },
+      "_type": "List"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

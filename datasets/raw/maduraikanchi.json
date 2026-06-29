@@ -1,0 +1,26 @@
+[
+  {
+    "id": "MDK-0770",
+    "tamil_text": "நெல்லின் உமிக்கரி கடியா நெடும்சுவர் நல்லில் மாடத்து நல்லொளி விளக்கே.",
+    "english_translation": "The bright lamp glows within the beautiful mansion with high walls, where the black charcoal of rice husk is swept away.",
+    "author": "Mangudi Maruthanar",
+    "work_name": "Maduraikanchi",
+    "chapter": "Lines 770-772",
+    "verse_number": "770",
+    "era": "Sangam (c. 300 BCE – 300 CE)",
+    "literary_category": "Heroic/Puram",
+    "source_url": "https://www.tamilvirtualuniversity.org/",
+    "license": "Public Domain",
+    "translator": "J.V. Chelliah",
+    "translator_notes": "Description of ancient Madurai households.",
+    "commentary": "Depicts cleanliness and luxury in the capital city of Madurai.",
+    "iks_concepts": [
+      "Porul"
+    ],
+    "glossary": {
+      "விளக்கே": "lamp",
+      "நெடும்சுவர்": "long wall"
+    },
+    "metadata": {}
+  }
+]
